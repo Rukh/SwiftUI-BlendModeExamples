@@ -7,19 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A48671129A67FD9001F11BE /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48671029A67FD9001F11BE /* TestApp.swift */; };
-		0A48671329A67FD9001F11BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48671229A67FD9001F11BE /* ContentView.swift */; };
-		0A48671529A67FDB001F11BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A48671429A67FDB001F11BE /* Assets.xcassets */; };
-		0A48671829A67FDB001F11BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A48671729A67FDB001F11BE /* Preview Assets.xcassets */; };
+		0A48671129A67FD9001F11BE /* BlendModeExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48671029A67FD9001F11BE /* BlendModeExamplesApp.swift */; };
+		0A48671329A67FD9001F11BE /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48671229A67FD9001F11BE /* ExampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A48670D29A67FD9001F11BE /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A48671029A67FD9001F11BE /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
-		0A48671229A67FD9001F11BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0A48671429A67FDB001F11BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A48671729A67FDB001F11BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0A48671929A67FDB001F11BE /* Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test.entitlements; sourceTree = "<group>"; };
+		0A48670D29A67FD9001F11BE /* BlendModeExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlendModeExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A48671029A67FD9001F11BE /* BlendModeExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeExamplesApp.swift; sourceTree = "<group>"; };
+		0A48671229A67FD9001F11BE /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +31,7 @@
 		0A48670429A67FD9001F11BE = {
 			isa = PBXGroup;
 			children = (
-				0A48670F29A67FD9001F11BE /* Test */,
+				0A48670F29A67FD9001F11BE /* Sources */,
 				0A48670E29A67FD9001F11BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,37 +39,26 @@
 		0A48670E29A67FD9001F11BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A48670D29A67FD9001F11BE /* Test.app */,
+				0A48670D29A67FD9001F11BE /* BlendModeExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A48670F29A67FD9001F11BE /* Test */ = {
+		0A48670F29A67FD9001F11BE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0A48671029A67FD9001F11BE /* TestApp.swift */,
-				0A48671229A67FD9001F11BE /* ContentView.swift */,
-				0A48671429A67FDB001F11BE /* Assets.xcassets */,
-				0A48671929A67FDB001F11BE /* Test.entitlements */,
-				0A48671629A67FDB001F11BE /* Preview Content */,
+				0A48671029A67FD9001F11BE /* BlendModeExamplesApp.swift */,
+				0A48671229A67FD9001F11BE /* ExampleView.swift */,
 			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		0A48671629A67FDB001F11BE /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				0A48671729A67FDB001F11BE /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A48670C29A67FD9001F11BE /* Test */ = {
+		0A48670C29A67FD9001F11BE /* BlendModeExamples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A48671C29A67FDB001F11BE /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = 0A48671C29A67FDB001F11BE /* Build configuration list for PBXNativeTarget "BlendModeExamples" */;
 			buildPhases = (
 				0A48670929A67FD9001F11BE /* Sources */,
 				0A48670A29A67FD9001F11BE /* Frameworks */,
@@ -84,9 +68,9 @@
 			);
 			dependencies = (
 			);
-			name = Test;
+			name = BlendModeExamples;
 			productName = Test;
-			productReference = 0A48670D29A67FD9001F11BE /* Test.app */;
+			productReference = 0A48670D29A67FD9001F11BE /* BlendModeExamples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +88,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0A48670829A67FD9001F11BE /* Build configuration list for PBXProject "Test" */;
+			buildConfigurationList = 0A48670829A67FD9001F11BE /* Build configuration list for PBXProject "BlendModeExamples" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +101,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A48670C29A67FD9001F11BE /* Test */,
+				0A48670C29A67FD9001F11BE /* BlendModeExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -127,8 +111,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A48671829A67FDB001F11BE /* Preview Assets.xcassets in Resources */,
-				0A48671529A67FDB001F11BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +121,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A48671329A67FD9001F11BE /* ContentView.swift in Sources */,
-				0A48671129A67FD9001F11BE /* TestApp.swift in Sources */,
+				0A48671329A67FD9001F11BE /* ExampleView.swift in Sources */,
+				0A48671129A67FD9001F11BE /* BlendModeExamplesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,13 +247,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Test/Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Test/Preview Content\"";
-				DEVELOPMENT_TEAM = A386SBTVF6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -280,7 +260,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gd.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = BlendModeExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,13 +272,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Test/Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Test/Preview Content\"";
-				DEVELOPMENT_TEAM = A386SBTVF6;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -307,7 +285,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gd.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = BlendModeExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +295,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A48670829A67FD9001F11BE /* Build configuration list for PBXProject "Test" */ = {
+		0A48670829A67FD9001F11BE /* Build configuration list for PBXProject "BlendModeExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A48671A29A67FDB001F11BE /* Debug */,
@@ -326,7 +304,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A48671C29A67FDB001F11BE /* Build configuration list for PBXNativeTarget "Test" */ = {
+		0A48671C29A67FDB001F11BE /* Build configuration list for PBXNativeTarget "BlendModeExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A48671D29A67FDB001F11BE /* Debug */,
