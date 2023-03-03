@@ -11,7 +11,10 @@ import SwiftUI
 struct BlendModeExamplesApp: App {
     var body: some Scene {
         WindowGroup {
-            ScrollView {
+            let columns = [
+                GridItem(.adaptive(minimum: 200))
+            ]
+            LazyVGrid(columns: columns) {
                 allViews(dublicateToDisk: true)
             }
         }
@@ -23,19 +26,19 @@ func allViews(dublicateToDisk: Bool = false) -> some View {
     ForEach(BlendMode.allCases, id: \.self) { blendMode in
         let name = String(describing: blendMode)
         let previewName = "." + name
-        let view = ExampleView(blendMode: blendMode).fixedSize()
+        let view = ExampleView(blendMode: blendMode)
         VStack {
             view
-            Text(previewName).font(.largeTitle)
+            Text(previewName).font(.title)
         }
         .padding()
-        .fixedSize()
         .onAppear {
             guard dublicateToDisk else { return }
-            let renderer = ImageRenderer(content: view)
-            renderer.scale = 2
+            let cgImage = ImageRenderer(
+                content: view.frame(width: 1024)
+            ).cgImage!
             saveImage(
-                image: CIImage(cgImage: renderer.cgImage!),
+                image: CIImage(cgImage: cgImage),
                 name: name
             )
         }
@@ -50,8 +53,8 @@ private func saveImage(image: CIImage, name: String) {
     
     let url = temporaryDirectory
         .appendingPathComponent(name)
-        .appendingPathExtension("heic")
-    try! CIContext().writeHEIFRepresentation(
+        .appendingPathExtension("png")
+    try! CIContext().writePNGRepresentation(
         of: image,
         to: url,
         format: .RGBA8,

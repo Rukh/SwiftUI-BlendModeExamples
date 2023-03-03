@@ -14,39 +14,33 @@ struct ExampleView: View {
     var body: some View {
         mountain
             .overlay(
-                sun.blendMode(blendMode),
-                alignment: .top
-            )
-            .overlay(
+            VStack {
+                sun
                 HStack {
                     tree.foregroundColor(.black)
                     Spacer()
                     tree.foregroundColor(.white)
-                }.blendMode(blendMode),
-                alignment: .bottom
-            )
-            .compositingGroup()
+                }
+            }.blendMode(blendMode)
+        )
+        .compositingGroup()
     }
     
     @ViewBuilder
     private var mountain: some View {
         resizableImage(systemName: "mountain.2.fill")
-            .frame(height: 400)
             .foregroundColor(.accentColor)
     }
 
     @ViewBuilder
     private var sun: some View {
         resizableImage(systemName: "sun.max.fill")
-            .frame(height: 250)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .foregroundColor(.orange)
     }
     
     @ViewBuilder
     private var tree: some View {
         resizableImage(systemName: "tree.fill")
-            .frame(height: 150)
     }
     
     @ViewBuilder
@@ -61,7 +55,10 @@ struct ExampleView: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        let _ = EmptyCollection<String>()
         allViews()
+            .frame(height: 400)
+            .fixedSize()
     }
 }
 #endif
