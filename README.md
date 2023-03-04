@@ -74,10 +74,9 @@ func sfImage(_ systemName: String, _ color: Color) -> some View {
 ### Other
 | Blend mode | Description | Result |
 | --- | --- | --- |
-| `.colorDodge` | Brightens the destination image based on the brightness of the source image. | ![Blend mode colorDodge](Examples/colorDodge.png) |
-| `.colorBurn` | Darkens the destination image based on the darkness of the source image. | ![Blend mode colorBurn](Examples/colorBurn.png) |
-| `.hue` | Uses the luminance and saturation values of the background with the hue of the source image. | ![Blend mode hue](Examples/hue.png) |
-| `.saturation` | Uses the luminance and hue values of the background with the saturation of the source image. Areas of the background that have no saturation (that is, pure gray areas) don’t produce a change. | ![Blend mode saturation](Examples/saturation.png) |
 | `.color` | Uses the luminance values of the background with the hue and saturation values of the source image. This mode preserves the gray levels in the image.<br><br>*You can use this mode to color monochrome images or to tint color images.* | ![Blend mode color](Examples/color.png) |
 | `.luminosity` | Uses the hue and saturation of the background with the luminance of the source image. This mode creates an effect that is inverse to the effect created by `.color`. | ![Blend mode luminosity](Examples/luminosity.png) |
-
+| `.saturation` | Uses the luminance and hue values of the background with the saturation of the source image. Areas of the background that have no saturation (that is, pure gray areas) don’t produce a change. | ![Blend mode saturation](Examples/saturation.png) |
+| `.hue` | Uses the luminance and saturation values of the background with the hue of the source image. | ![Blend mode hue](Examples/hue.png) |
+| `.colorDodge` | Brightens the destination image based on the brightness of the source image. | ![Blend mode colorDodge](Examples/colorDodge.png) |
+| `.colorBurn` | Darkens the destination image based on the darkness of the source image. | ![Blend mode colorBurn](Examples/colorBurn.png) |
