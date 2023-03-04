@@ -32,23 +32,23 @@ func sfImage(_ systemName: String, _ color: Color) -> some View {
 ```
 ## Example Usage
 ### Default mode
-| Name | Description | Image |
+| Blend mode | Description | Result |
 | --- | --- | --- |
 | `.normal` | Draws the source image over the destination image with no blending or compositing effects applied. | ![Blend mode normal](Examples/normal.png) |
 
 ### Alpha clipping
-| Name | Description | Image |
+| Blend mode | Description | Result |
 | --- | --- | --- |
 | `.destinationOut` | Makes the overlapping areas of the source and destination images transparent. | ![Blend mode destinationOut](Examples/destinationOut.png) |
 | `.sourceAtop` | Draws the source image on top of the destination image, but only in the areas where they overlap. | ![Blend mode sourceAtop](Examples/sourceAtop.png) |
 
 ### Composing
-| Name | Description | Image |
+| Blend mode | Description | Result |
 | --- | --- | --- |
 | `.destinationOver` | Draws the destination image on top of the source image. | ![Blend mode destinationOver](Examples/destinationOver.png) |
 
 ### Color manipulation
-| Name | Description | Image |
+| Blend mode | Description | Result |
 | --- | --- | --- |
 | `.multiply` | Multiplies the colors of the source and destination images, resulting in a darker image. | ![Blend mode multiply](Examples/multiply.png) |
 | `.screen` | Inversely multiplies the colors of the source and destination images, resulting in a lighter image. | ![Blend mode screen](Examples/screen.png) |
