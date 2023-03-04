@@ -12,42 +12,25 @@ struct ExampleView: View {
     var blendMode: BlendMode = .normal
     
     var body: some View {
-        mountain
+        sfImage("mountain.2.fill", .accentColor)
             .overlay(
-            VStack {
-                sun
-                HStack {
-                    tree.foregroundColor(.black)
-                    Spacer()
-                    tree.foregroundColor(.white)
-                }
-            }.blendMode(blendMode)
-        )
-        .compositingGroup()
+                VStack {
+                    sfImage("sun.max.fill", .orange)
+                    HStack {
+                        sfImage("tree.fill", .black)
+                        Spacer()
+                        sfImage("tree.fill", .white)
+                    }
+                }.blendMode(blendMode)
+            )
+            .compositingGroup()
     }
     
-    @ViewBuilder
-    private var mountain: some View {
-        resizableImage(systemName: "mountain.2.fill")
-            .foregroundColor(.accentColor)
-    }
-
-    @ViewBuilder
-    private var sun: some View {
-        resizableImage(systemName: "sun.max.fill")
-            .foregroundColor(.orange)
-    }
-    
-    @ViewBuilder
-    private var tree: some View {
-        resizableImage(systemName: "tree.fill")
-    }
-    
-    @ViewBuilder
-    private func resizableImage(systemName: String) -> some View {
+    private func sfImage(_ systemName: String, _ color: Color) -> some View {
         Image(systemName: systemName)
             .resizable()
             .scaledToFit()
+            .foregroundColor(color)
     }
 
 }

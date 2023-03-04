@@ -48,7 +48,7 @@ func allViews(dublicateToDisk: Bool = false) -> some View {
 
 private func saveImage(image: CIImage, name: String) {
     let temporaryDirectory = FileManager.default.temporaryDirectory
-        .appendingPathComponent("images")
+        .appendingPathComponent("Examples")
     try? FileManager.default.createDirectory(at: temporaryDirectory, withIntermediateDirectories: false)
     
     let url = temporaryDirectory
