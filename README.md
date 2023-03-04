@@ -30,6 +30,7 @@ func sfImage(_ systemName: String, _ color: Color) -> some View {
         .foregroundColor(color)
 }
 ```
+
 ## Example Usage
 ### Default mode
 | Blend mode | Description | Result |
@@ -47,23 +48,36 @@ func sfImage(_ systemName: String, _ color: Color) -> some View {
 | --- | --- | --- |
 | `.destinationOver` | Draws the destination image on top of the source image. | ![Blend mode destinationOver](Examples/destinationOver.png) |
 
-### Color manipulation
+### Components multiplying
 | Blend mode | Description | Result |
 | --- | --- | --- |
 | `.multiply` | Multiplies the colors of the source and destination images, resulting in a darker image. | ![Blend mode multiply](Examples/multiply.png) |
 | `.screen` | Inversely multiplies the colors of the source and destination images, resulting in a lighter image. | ![Blend mode screen](Examples/screen.png) |
 | `.overlay` | Combines Multiply and Screen blend modes, resulting in a combination of darker and lighter areas. | ![Blend mode overlay](Examples/overlay.png) |
+| `.hardLight` | Combines Multiply and Screen blend modes, but with more intense effects. | ![Blend mode hardLight](Examples/hardLight.png) |
+
+### Components selection by condition 
+| Blend mode | Description | Result |
+| --- | --- | --- |
 | `.darken` | Selects the darker of the source and destination pixels for each pixel in the output image. | ![Blend mode darken](Examples/darken.png) |
 | `.lighten` | Selects the lighter of the source and destination pixels for each pixel in the output image. | ![Blend mode lighten](Examples/lighten.png) |
+
+### Components adding and subtracting
+| Blend mode | Description | Result |
+| --- | --- | --- |
+| `.plusDarker` | Adds the source and destination pixel values and subtracts 0.5, resulting in a darker image. | ![Blend mode plusDarker](Examples/plusDarker.png) |
+| `.plusLighter` | Adds the source and destination pixel values, resulting in a brighter image. | ![Blend mode plusLighter](Examples/plusLighter.png) |
+| `.difference` | Subtracts the colors of the source image from the destination image, resulting in a negative image. | ![Blend mode difference](Examples/difference.png) |
+| `.exclusion` | Similar to Difference blend mode, but with less intense effects. | ![Blend mode exclusion](Examples/exclusion.png) |
+
+### Other
+| Blend mode | Description | Result |
+| --- | --- | --- |
 | `.colorDodge` | Brightens the destination image based on the brightness of the source image. | ![Blend mode colorDodge](Examples/colorDodge.png) |
 | `.colorBurn` | Darkens the destination image based on the darkness of the source image. | ![Blend mode colorBurn](Examples/colorBurn.png) |
 | `.softLight` | Darkens or lightens the destination image based on the colors of the source image. | ![Blend mode softLight](Examples/softLight.png) |
-| `.hardLight` | Combines Multiply and Screen blend modes, but with more intense effects. | ![Blend mode hardLight](Examples/hardLight.png) |
-| `.difference` | Subtracts the colors of the source image from the destination image, resulting in a negative image. | ![Blend mode difference](Examples/difference.png) |
-| `.exclusion` | Similar to Difference blend mode, but with less intense effects. | ![Blend mode exclusion](Examples/exclusion.png) |
 | `.hue` | Changes the hue of the destination image based on the hue of the source image. | ![Blend mode hue](Examples/hue.png) |
 | `.saturation` | Changes the saturation of the destination image based on the saturation of the source image. | ![Blend mode saturation](Examples/saturation.png) |
 | `.color` | Changes the hue and saturation of the destination image based on the hue and saturation of the source image. | ![Blend mode color](Examples/color.png) |
 | `.luminosity` | Changes the brightness of the destination image based on the brightness of the source image. | ![Blend mode luminosity](Examples/luminosity.png) |
-| `.plusDarker` | Adds the source and destination pixel values and subtracts 0.5, resulting in a darker image. | ![Blend mode plusDarker](Examples/plusDarker.png) |
-| `.plusLighter` | Adds the source and destination pixel values, resulting in a brighter image. | ![Blend mode plusLighter](Examples/plusLighter.png) |
+
