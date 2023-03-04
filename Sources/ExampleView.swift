@@ -13,17 +13,20 @@ struct ExampleView: View {
     
     var body: some View {
         sfImage("mountain.2.fill", .accentColor)
-            .overlay(
-                VStack {
-                    sfImage("sun.max.fill", .orange)
-                    HStack {
-                        sfImage("tree.fill", .black)
-                        Spacer()
-                        sfImage("tree.fill", .white)
-                    }
-                }.blendMode(blendMode)
-            )
+            .overlay(overlay.blendMode(blendMode))
             .compositingGroup()
+    }
+    
+    @ViewBuilder
+    private var overlay: some View {
+        VStack {
+            sfImage("sun.max.fill", .orange)
+            HStack {
+                sfImage("tree.fill", .black)
+                Spacer()
+                sfImage("tree.fill", .white)
+            }
+        }
     }
     
     private func sfImage(_ systemName: String, _ color: Color) -> some View {
