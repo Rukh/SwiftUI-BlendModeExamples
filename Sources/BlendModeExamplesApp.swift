@@ -35,7 +35,7 @@ func allViews(dublicateToDisk: Bool = false) -> some View {
         .onAppear {
             guard dublicateToDisk else { return }
             let cgImage = ImageRenderer(
-                content: view.frame(width: 1024)
+                content: view.frame(width: 720)
             ).cgImage!
             saveImage(
                 image: CIImage(cgImage: cgImage),
