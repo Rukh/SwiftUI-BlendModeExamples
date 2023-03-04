@@ -55,6 +55,7 @@ func sfImage(_ systemName: String, _ color: Color) -> some View {
 | `.screen` | Inversely multiplies the colors of the source and destination images, resulting in a lighter image. | ![Blend mode screen](Examples/screen.png) |
 | `.overlay` | Combines Multiply and Screen blend modes, resulting in a combination of darker and lighter areas. | ![Blend mode overlay](Examples/overlay.png) |
 | `.hardLight` | Combines Multiply and Screen blend modes, but with more intense effects. | ![Blend mode hardLight](Examples/hardLight.png) |
+| `.softLight` | Darkens or lightens the destination image based on the colors of the source image. | ![Blend mode softLight](Examples/softLight.png) |
 
 ### Components selection by condition 
 | Blend mode | Description | Result |
@@ -75,7 +76,6 @@ func sfImage(_ systemName: String, _ color: Color) -> some View {
 | --- | --- | --- |
 | `.colorDodge` | Brightens the destination image based on the brightness of the source image. | ![Blend mode colorDodge](Examples/colorDodge.png) |
 | `.colorBurn` | Darkens the destination image based on the darkness of the source image. | ![Blend mode colorBurn](Examples/colorBurn.png) |
-| `.softLight` | Darkens or lightens the destination image based on the colors of the source image. | ![Blend mode softLight](Examples/softLight.png) |
 | `.hue` | Changes the hue of the destination image based on the hue of the source image. | ![Blend mode hue](Examples/hue.png) |
 | `.saturation` | Changes the saturation of the destination image based on the saturation of the source image. | ![Blend mode saturation](Examples/saturation.png) |
 | `.color` | Changes the hue and saturation of the destination image based on the hue and saturation of the source image. | ![Blend mode color](Examples/color.png) |
