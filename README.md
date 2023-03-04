@@ -78,6 +78,6 @@ func sfImage(_ systemName: String, _ color: Color) -> some View {
 | `.colorBurn` | Darkens the destination image based on the darkness of the source image. | ![Blend mode colorBurn](Examples/colorBurn.png) |
 | `.hue` | Changes the hue of the destination image based on the hue of the source image. | ![Blend mode hue](Examples/hue.png) |
 | `.saturation` | Changes the saturation of the destination image based on the saturation of the source image. | ![Blend mode saturation](Examples/saturation.png) |
-| `.color` | Uses the luminance values of the background with the hue and saturation values of the source image. This mode preserves the gray levels in the image.<br>You can use this mode to color monochrome images or to tint color images. | ![Blend mode color](Examples/color.png) |
+| `.color` | Uses the luminance values of the background with the hue and saturation values of the source image. This mode preserves the gray levels in the image.<br>*You can use this mode to color monochrome images or to tint color images.* | ![Blend mode color](Examples/color.png) |
 | `.luminosity` | Uses the hue and saturation of the background with the luminance of the source image. This mode creates an effect that is inverse to the effect created by `.color`. | ![Blend mode luminosity](Examples/luminosity.png) |
 
